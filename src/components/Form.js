@@ -1,4 +1,5 @@
 import styles from "../style.module.css"
+import shortid from "shortid"
 
 
 const Form = ({todo, setTodo, todoList, setTodoList})=>{
@@ -11,7 +12,7 @@ const Form = ({todo, setTodo, todoList, setTodoList})=>{
         // const tempList = todoList
         // tempList.push(todo)
         // setTodoList(tempList)
-        setTodoList([...todoList, todo])
+        setTodoList([...todoList, {name:todo, id:shortid.generate()}])
         setTodo("")
         console.log(todoList)
     }

@@ -5,7 +5,7 @@ const Todo = ({todoItem})=>{
     return(
         <div>
             <div className={styles.todoitem}>
-                <h3 className={styles.todoname}>{todoItem}</h3>
+                <h3 className={styles.todoname}>{todoItem.name}</h3>
                 <button className={styles.deletebutton} type="submit">Done</button>
             </div>
         </div>
