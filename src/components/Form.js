@@ -19,7 +19,7 @@ const Form = ({todo, setTodo, todoList, setTodoList})=>{
 
     return(
         <div className={styles.todoform}>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className={styles.formbody}>
                 <input type="text" value={todo} onChange={handleChange} className={styles.todoinput} placeholder="Add Todo Item"></input>
                 <br />
                 <button type="submit" className={styles.todobutton}>ADD</button>

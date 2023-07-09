@@ -14,24 +14,36 @@
     width: 100%;
     margin: auto;
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
 }
 
 .todoinput{
-    width: 80%;
+    width: 90%;
     font-size: 1.3em;
     margin: 10px auto;
     padding: 5px;
     border: none;
     border-bottom: 1px orange solid;
+    
 }
 
 .todobutton{
-    border: none;
-    background-color: green;
-    color: white;
+    border: 1px solid green;
+    /* background-color: green; */
+    color: green;
     padding: 5px 20px;
     font-size: 1.2em;
     border-radius: 5px;   
+}
+
+.todobutton:hover{
+    color: white;
+    background-color: green;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
 }
 
 .todoitem{
@@ -52,4 +64,17 @@
     padding: 5px 20px;
     font-size: 1.2em;
     border-radius: 5px;
+}
+
+.formbody{
+    width: 60vh;
+    border: 2px solid whitesmoke;
+    box-shadow: 5px 5px 30px 10px wheat;
+    align-content: center;
+}
+
+.formbody:hover{
+    box-shadow: 5px 5px 20px 5px royalblue;
+    transition: all 1s ease-in-out;
+
 }
