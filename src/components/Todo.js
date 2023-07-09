@@ -7,7 +7,7 @@ const Todo = ({todoItem, todoList, setTodoList})=>{
     }
 
     return(
-        <div>
+        <div className={styles.todoitemcontainer}>
             <div className={styles.todoitem}>
                 <h3 className={styles.todoname}>{todoItem.name}</h3>
                 <button onClick={deleteTodo} className={styles.deletebutton} type="submit">Done</button>

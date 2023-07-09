@@ -8,13 +8,18 @@ const Form = ({todo, setTodo, todoList, setTodoList})=>{
     }
 
     const handleSubmit = (event)=>{
-        event.preventDefault();
-        // const tempList = todoList
-        // tempList.push(todo)
-        // setTodoList(tempList)
-        setTodoList([...todoList, {name:todo, id:shortid.generate()}])
-        setTodo("")
-        console.log(todoList)
+        if (todo == ""){
+            event.preventDefault();
+            alert("Please enter a Todo task!")
+        } else{
+            event.preventDefault();
+            // const tempList = todoList
+            // tempList.push(todo)
+            // setTodoList(tempList)
+            setTodoList([...todoList, {name:todo, id:shortid.generate()}])
+            setTodo("")
+            console.log(todoList)
+        }
     }
 
     return(
